@@ -1,14 +1,18 @@
+package co.edu.escuelaing.parcial.services;
+
+import co.edu.escuelaing.parcial.models.Appoitment;
+import co.edu.escuelaing.parcial.repositories.AppoimentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.List;
 
 @Service
-public class AppointmentService {
+public class AppoimentService {
     @Autowired
-    private AppointmentRepository repository;
+    private AppoimentRepository repository;
 
-    public Appointment schedule(Appointment a) {
+    public Appoitment schedule(Appoitment a) {
         if (a.getDate().isBefore(LocalDate.now())) {
             a.setStatus("Rechazada");
         } else {
@@ -17,16 +21,16 @@ public class AppointmentService {
         return repository.save(a);
     }
 
-    public List<Appointment> getByEmail(String email) {
+    public List<Appoitment> getByEmail(String email) {
         return repository.findByEmail(email);
     }
 
-    public List<Appointment> filterByStatus(String email, String status) {
+    public List<Appoitment> filterByStatus(String email, String status) {
         return repository.findByEmailAndStatus(email, status);
     }
 
-    public Appointment cancel(String id) {
-        Appointment a = repository.findById(id).orElse(null);
+    public Appoitment cancel(String id) {
+        Appoitment a = repository.findById(id).orElse(null);
         if (a != null) {
             a.setStatus("Cancelada");
             return repository.save(a);
