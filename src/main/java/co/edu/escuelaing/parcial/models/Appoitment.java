@@ -35,4 +35,70 @@ public class Appoitment {
     }
 
     // Getters y Setters
+    public String getId() {
+        return id;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getIdNumber() {
+        return idNumber;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+
+    public String getSpecialty() {
+        return specialty;
+    }
+
+    public String getDoctor() {
+        return doctor;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    // Setters
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public void setSpecialty(String specialty) {
+        this.specialty = specialty;
+    }
+
+    public void setDoctor(String doctor) {
+        this.doctor = doctor;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
 }
