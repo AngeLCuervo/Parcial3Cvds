@@ -1,9 +1,9 @@
-#  Clínica ECI Salud Vital - Backend
+# Clínica ECI Salud Vital - Backend
 
 **Nombre del estudiante**: Angel Cuervo
 **Grupo**: CVDS - Tercer Tercio  
 
-##  Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - Java 17
 - Spring Boot
@@ -13,7 +13,7 @@
 - MongoDB Atlas
 - Azure App Service
 
-## 📄 Descripción
+## Descripción
 
 Este backend gestiona la lógica de negocio de la aplicación de citas médicas de la Clínica ECI Salud Vital. Permite consultar especialidades, registrar citas con validación de campos, consultar y filtrar historial de citas, y cancelar citas.
 
